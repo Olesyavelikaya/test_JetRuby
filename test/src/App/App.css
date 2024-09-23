@@ -1,0 +1,50 @@
+@import "../style/normaliz.css";
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+  margin: 50px auto;
+  width: fit-content;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+  color: black;
+  border: 1px solid black;
+}
+
+.tile.open {
+  background-color: transparent;
+}
+
+.game-over {
+  font-size: 32px;
+  color: green;
+}
+
+.title-board {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.button-restart {
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.button-restart:hover {
+  background-color: green;
+}
