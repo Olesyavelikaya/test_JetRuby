@@ -19,7 +19,6 @@ const BoardTile = () => {
   const tiles = useSelector(selectTiles);
   const selectedTiles = useSelector(SelelectSelectedTiles);
   const isGameOver = useSelector(SelectIsGameOver);
-  console.log(selectTiles);
 
   useEffect(() => {
     dispatch(initializeTiles());
